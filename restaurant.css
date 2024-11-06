@@ -1,0 +1,205 @@
+html {
+   scroll-behavior: smooth;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.container {
+   max-width: 1200px;
+   margin: auto;
+}
+
+header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #24a19c;
+   padding: 1rem;
+   text-align: center;
+}
+
+.logo-div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 1rem;
+}
+
+.logo {
+   color: white;
+   width: 100px;
+   height: 100px;
+   background-color: #24a19c;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%; /* Circular logo */
+   border: 3px solid white;
+   font-size: 2.5rem;
+}
+
+nav ul {
+   display: flex;
+   gap: 1rem;
+}
+
+nav ul li {
+   list-style: none;
+}
+
+nav ul li a {
+   color: white;
+   text-decoration: none;
+   padding: 10px 20px;
+   text-transform: uppercase;
+   font-size: 0.9rem;
+   font-family: Arial, Helvetica, sans-serif;
+   transition: 0.4s;
+}
+
+nav ul li a:hover {
+   background-color: rgba(0, 0, 0, 0.5);
+   border-radius: 10px;
+}
+
+/* Banner Section */
+#banner-section {
+   background-image: url('./food 1.webp');
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 300px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #333;
+}
+
+.banner-content h1 {
+   font-size: 2.5rem;
+   color: yellow;
+   margin: 0.5rem;
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: 10px;
+   border-radius: 10px;
+}
+.banner-content p{
+text-align: center;
+font-weight: bolder;
+color: white;
+font-size: 1.2rem;
+}
+.BTN{
+   background-color: #dbffff;
+   border: 10px solid yellow;
+   color: #333;
+   font-size: 1rem;
+
+}
+.BTN:hover{
+   background-color: #f3f3f3;
+   border: 5px solid yellow;
+   color: #333;
+   font-size: 1rem;
+
+}
+
+.map{
+
+   border-radius: 5px gray;
+}
+
+
+
+/* Card Section */
+.card-section {
+   padding: 2rem;
+   text-align: center;
+}
+
+.card-section h2 {
+   margin-bottom: 1rem;
+   font-size: 2rem;
+   color: #24a19c;
+}
+
+.card {
+   background-color: #f9f9f9;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   max-width: 300px;
+   margin: 1rem auto;
+   padding: 1rem;
+   text-align: center;
+}
+
+.card img {
+   width: 100%;
+   border-radius: 8px;
+}
+
+.card h3 {
+   margin: 1rem 0 0.5rem;
+   font-size: 1.5rem;
+   color: #333;
+}
+
+.card p {
+   margin: 0.5rem 0;
+   color: #666;
+   font-size: 0.9rem;
+}
+.card:hover{
+   background-color: #74fff8;
+   box-shadow: #15eefd;
+   transition: 0.2s;
+}
+
+/* Footer */
+footer {
+   background-color: #333;
+   color: white;
+   text-align: center;
+   padding: 1rem;
+   font-size: 0.8rem;
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+   nav ul {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .banner-content h1 {
+       font-size: 1.5rem;
+   }
+}
+
+@media (min-width: 768px) {
+   .logo {
+       width: 80px;
+       height: 80px;
+   }
+
+   .banner-content h1 {
+       font-size: 3rem;
+   }
+}
+
+@media (min-width: 992px) {
+   header {
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+   .banner-content h1 {
+       font-size: 3.5rem;
+   }
+}
